@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="emp1" class="com.example.demo.model.Employee">
+    <property name="name" value="sujatha"></property>
+    
+    <property name="phones">
+    <list>
+    
+    <value>877773333 </value>
+    <value> 76636363</value>
+    <value>839388393 </value>
+    <value>898986666 </value>
+    <null/>
+    </list>
+    </property>
+    <property name="address">
+    <set>
+    
+    <value>DELHI</value>
+    <value>HYD</value>
+    <value>BLR</value>
+    <value>CHENNAI</value>
+    </set>
+    </property>
+    
+    <property name="courses">
+    <map>
+    
+    <entry key="java" value="2months"></entry>
+    <entry key="python" value="3months"></entry>
+    <entry key="c" value="2months"></entry>
+    <entry key="html" value="4months"></entry>
+    
+    </map>
+    
+   </property>
+   <property name="properties">
+   
+   <props>
+   
+   <prop key="name">sujatha</prop>
+   <prop key="land name">land property on sujatha</prop>
+   
+   </props>
+   
+   
+   </property>
+    
+    </bean>
+    </beans>
